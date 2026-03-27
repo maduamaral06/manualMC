@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<!--
+    #Publishers: Luiza Scarparo Landim
+    #Last edition: 05/01/2026
+    #Version: 2.0
+-->
+
+<html>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNVT2YN5CD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LNVT2YN5CD');
+    </script>
+
+    <title>DEFENSE IA | Guia de Instalação</title>
+    <link href="../res/img/favicon.ico" rel="shortcut icon"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="../res/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../res/css/manual.css" rel="stylesheet" type="text/css"/>
+    <script src="../res/js/jquery.min.js"></script>
+    <script src="../res/js/bootstrap.min.js"></script>
+    <script src="../res/js/animatescroll.js"></script>
+    <script src="../res/js/manual.js"></script>
+    <script type="text/javascript">
+        var comboGoogleTradutor = null; //Varialvel global
+    
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pt',
+                includedLanguages: 'en,es,pt',
+                layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+            }, 'google_translate_element');
+    
+            comboGoogleTradutor = document.getElementById("google_translate_element").querySelector(".goog-te-combo");
+        }
+    
+        function changeEvent(el) {
+            if (el.fireEvent) {
+                el.fireEvent('onchange');
+            } else {
+                var evObj = document.createEvent("HTMLEvents");
+    
+                evObj.initEvent("change", false, true);
+                el.dispatchEvent(evObj);
+            }
+        }
+    
+        function trocarIdioma(sigla) {
+            if (comboGoogleTradutor) {
+                comboGoogleTradutor.value = sigla;
+                changeEvent(comboGoogleTradutor);//Dispara a troca
+            }
+        }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <style type="text/css">
+            
+            
+            .goog-te-banner-frame {
+                display: none !important;
+            }
+            .goog-logo-link {
+                display:none !important;
+            }
+            .goog-te-gadget {
+            color: transparent !important;
+            }
+
+            .goog-te-gadget .goog-te-combo {
+            color: black !important;
+            }
+            body {
+                position: static !important;
+                top: 0 !important;
+            }
+            
+            </style>
+</head>
+<body class="scayt-enabled" data-spy="scroll" data-target=".scrollspy">
+
+    <div class="overlay"></div>
+
+    <div class="header no-print">
+        <nav class="nav-header">
+            <div class="logo">
+                <a href="../index.html">
+                    <figure>
+                        <img class="nav-img" src="../res/img/intelbras_marca.svg">
+                    </figure>
+                </a>
+            </div>
+            <div class="iconMenu">
+                <a id="toggleMenu">
+                    <img src="../res/img/menu.svg">
+                </a>
+            </div>
+            <div style="float: right; top: 16px; position: relative;">
+                <div id="google_translate_element"></div>
+                
+                <a href="#" onClick="window.print()">
+                    <img src="../res/img/pdf.svg">
+                </a>
+            </div>
+            <ul style="list-style-type: none;">
+                <li  id="op1" class="nav-option bg1">
+                    <a href="guiadeusuario_pt-BR.html">
+                        <div class="ico-option">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" x="0px" y="0px" viewBox="0 0 88 88" xml:space="preserve">
+                                <g>
+                                    <path fill="#00A94D" d="M44,1C20.3,1,1,20.3,1,44c0,23.7,19.3,43,43,43c23.8,0,43-19.3,43-43C87,20.3,67.7,1,44,1z M44,83.4
+                                        C22.2,83.4,4.6,65.8,4.6,44C4.6,22.2,22.2,4.6,44,4.6c21.8,0,39.4,17.6,39.4,39.4C83.4,65.8,65.8,83.4,44,83.4z"/>
+                                    <path fill="#00A94D" d="M68.9,23.3H19.1c-1.9,0-3.4,1.5-3.4,3.4v34.5c0,1.9,1.5,3.4,3.4,3.4h49.9c1.9,0,3.4-1.5,3.4-3.4V26.7
+                                        C72.4,24.8,70.8,23.3,68.9,23.3z M68.5,25c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1C67.6,25.4,68,25,68.5,25z M65,25
+                                        c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1C64,25.4,64.4,25,65,25z M61.4,25c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1
+                                        c-0.5,0-1-0.4-1-1C60.4,25.4,60.9,25,61.4,25z M70.5,59.4c0,1.8-1.5,3.3-3.4,3.3H21c-1.9,0-3.4-1.5-3.4-3.3V31.8
+                                        c0-1.8,1.5-3.3,3.4-3.3H67c1.9,0,3.4,1.5,3.4,3.3V59.4z"/>
+                                    <g>
+                                        <g>
+                                            <path fill="#00A94D" d="M65.8,59.8H38.7c-1.3,0-2.4-1.1-2.4-2.4v-3.9c0-1.3,1.1-2.4,2.4-2.4h27.1c1.3,0,2.4,1.1,2.4,2.4v3.9
+                                                C68.2,58.7,67.1,59.8,65.8,59.8z M38.7,52.3c-0.6,0-1.2,0.5-1.2,1.2v3.9c0,0.6,0.5,1.2,1.2,1.2h27.1c0.6,0,1.2-0.5,1.2-1.2v-3.9
+                                                c0-0.6-0.5-1.2-1.2-1.2H38.7z"/>
+                                        </g>
+                                        <g>
+                                            <path fill="#00A94D" d="M65.8,48.6H38.7c-1.3,0-2.4-1.1-2.4-2.4V34.8c0-1.3,1.1-2.4,2.4-2.4h27.1c1.3,0,2.4,1.1,2.4,2.4v11.4
+                                                C68.2,47.5,67.1,48.6,65.8,48.6z M38.7,33.6c-0.6,0-1.2,0.5-1.2,1.2v11.4c0,0.6,0.5,1.2,1.2,1.2h27.1c0.6,0,1.2-0.5,1.2-1.2V34.8
+                                                c0-0.6-0.5-1.2-1.2-1.2H38.7z"/>
+                                        </g>
+                                        
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="title-option">
+                            Guia de Implantação
+                        </span>
+                        <span class="title-option m">
+                            Guia
+                        </span>
+                    </a>
+                </li>
+
+                <li id="op2" class="nav-option bg2">
+                    <a href="manual_pt-BR.html">
+                        <div class="ico-option">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" x="0px" y="0px"
+                                 viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
+                                <g>
+                                    <path fill="#00A94D" d="M44,1C20.3,1,1,20.3,1,44c0,23.7,19.3,43,43,43c23.8,0,43-19.3,43-43C87,20.3,67.7,1,44,1z M44,83.4
+                                        C22.2,83.4,4.6,65.8,4.6,44C4.6,22.2,22.2,4.6,44,4.6c21.8,0,39.4,17.6,39.4,39.4C83.4,65.8,65.8,83.4,44,83.4z"/>
+                                    <path fill="#00A94D" d="M68.9,23.3H19.1c-1.9,0-3.4,1.5-3.4,3.4v34.5c0,1.9,1.5,3.4,3.4,3.4h49.9c1.9,0,3.4-1.5,3.4-3.4V26.7
+                                        C72.4,24.8,70.8,23.3,68.9,23.3z M68.5,25c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1C67.6,25.4,68,25,68.5,25z M65,25
+                                        c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1C64,25.4,64.4,25,65,25z M61.4,25c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1
+                                        c-0.5,0-1-0.4-1-1C60.4,25.4,60.9,25,61.4,25z M70.5,59.4c0,1.8-1.5,3.3-3.4,3.3H21c-1.9,0-3.4-1.5-3.4-3.3V31.8
+                                        c0-1.8,1.5-3.3,3.4-3.3H67c1.9,0,3.4,1.5,3.4,3.3V59.4z"/>
+                                    <g>
+                                        <g>
+                                            <path fill="#00A94D" d="M65.8,59.8H38.7c-1.3,0-2.4-1.1-2.4-2.4v-3.9c0-1.3,1.1-2.4,2.4-2.4h27.1c1.3,0,2.4,1.1,2.4,2.4v3.9
+                                                C68.2,58.7,67.1,59.8,65.8,59.8z M38.7,52.3c-0.6,0-1.2,0.5-1.2,1.2v3.9c0,0.6,0.5,1.2,1.2,1.2h27.1c0.6,0,1.2-0.5,1.2-1.2v-3.9
+                                                c0-0.6-0.5-1.2-1.2-1.2H38.7z"/>
+                                        </g>
+                                        <g>
+                                            <path fill="#00A94D" d="M65.8,48.6H38.7c-1.3,0-2.4-1.1-2.4-2.4V34.8c0-1.3,1.1-2.4,2.4-2.4h27.1c1.3,0,2.4,1.1,2.4,2.4v11.4
+                                                C68.2,47.5,67.1,48.6,65.8,48.6z M38.7,33.6c-0.6,0-1.2,0.5-1.2,1.2v11.4c0,0.6,0.5,1.2,1.2,1.2h27.1c0.6,0,1.2-0.5,1.2-1.2V34.8
+                                                c0-0.6-0.5-1.2-1.2-1.2H38.7z"/>
+                                        </g>
+                                        <g>
+                                            <rect x="19.9" y="33" fill="#00A94D" width="12.9" height="1.8"/>
+                                        </g>
+                                        <g>
+                                            <rect x="19.9" y="39.1" fill="#00A94D" width="12.9" height="1.8"/>
+                                        </g>
+                                        <g>
+                                            <rect x="19.9" y="51.3" fill="#00A94D" width="12.9" height="1.8"/>
+                                        </g>
+                                        <g>
+                                            <rect x="19.9" y="45.2" fill="#00A94D" width="12.9" height="1.8"/>
+                                        </g>
+                                        <g>
+                                            <rect x="19.9" y="57.3" fill="#00A94D" width="12.9" height="1.8"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="title-option">
+                            Guia de operação
+                        </span>
+                        <span class="title-option m">
+                            Manual
+                        </span>
+                    </a>
+                </li>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container" style="max-width: 1280px">
+        <div class="row">
+            <div class="col-md-3 scrollspy" style="top: 150px">
+                <ul class="nav hidden-xs hidden-sm" data-spy="affix" id="nav" style="top: 150px;">
+              
+                <li><a href="#INSTALACAO">INSTALAÇÃO E IMPLANTAÇÃO</a>
+                    <ul class="nav">
+                        <li><a href="#processo_instalacao_do_servidor">Instalação do Servidor</a></li>
+                        <li><a href="#download_client">Download do Cliente Desktop</a></li>
+                        <li><a href="#processo_instalacao_do_client">Primeiros passos</a>
+                            <ul class="nav">
+                                <li><a href="#conectar_servidorEmail">Conecte-se a um servidor de e-mail</a></li>
+                                <li><a href="#configurar_disco">Configure um disco de imagens e arquivos</a></li>
+                                <li><a href="#adicionar_dispositivo">Adicione dispositivos</a></li>
+                                <li><a href="#sincronizacao_horario">Sincronização de horário entre dispositivos</a></li>
+                                <li><a href="#backup">Configure uma rotina de Backup</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#processo_instalacao_ca">Instalação do Cliente WEB de Controle de Acesso</a></li>
+                        <li><a href="#processo_instalacao_alarmes_incendio">Instalação do Cliente WEB de Middleware de Centrais</a></li>
+                        <li><a href="#instalacao_app">Instalação do Aplicativo Móvel Intelbras Defense IA</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#IMPORTACAO">IMPORTAÇÃO DE DADOS E DISPOSIIVOS</a>
+                        <ul class="nav">
+                            <li><a href="#importacao_de_dados_ca">Importação de dados de controladoras de acesso</a></li>
+                            <li><a href="#importacao_dispo">Importação de dispositvo</a></li>
+                        </ul>
+                    </li>
+                <li><a href="#faleCom">FALE COM A GENTE</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-9">
+                <section id="capa" class="capa">
+                    <div class="div-logo-capa">
+                        <img src="../res/img/intelbras_marca.svg" class="logo-capa">
+                    </div>
+                    <hr class="divider">
+                    <div class="div-titulo-capa">
+                        <h1>Guia do usuário</h1>
+                        <h3>Defense IA V3.3</h3>
+                    </div>
+                </section>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <section id="INSTALACAO">
+                    <h1>Processo de Instalação do Sistema</h1>
+                    <p>Siga as instruções a seguir para instalação e implantação do sistema Intelbras Defense IA V3.3</p>
+                    <section id="processo_instalacao_do_servidor" data-titulo="Processo de Instalação">
+                        <h2>Instalação do Servidor</h2>
+
+                        <section id="processo_instalacao_do_servidor_unico" data-titulo="Processo Servidor Unico">
+
+                            <p>Para baixar o instalador do cliente, acesse a página web do servidor pelo navegador utilizando o
+                            endereço IP configurado, ou nome de domínio. Clique no ícone do Windows em PC para iniciar o download. ( <img src="../res/img/guia_do_usuario/processo_instalacao/icone_instalador.png" width="50px"> ) com o botão direito do mouse e selecione a opção "Executar como Administrador."</p>
+
+                
+                            
+                            <p class="ale high"><b> </b> O nome do instalador inclui a versão e data, confirme-os antes da instalação.</p>
+                            <p>Para prosseguir com a instalação, deverá confirmar a leitura dos termos de uso. Selecione a checkbox
+                                para aceitá-los, e então clique em <b>Próximo</b>.</p>
+                            
+                            <p></p>
+                            <img src="../res/img/guia_do_usuario/processo_instalacao/inicio_instalacao.png" width="600px" style="display: block; margin: auto;">
+                            <p></p>
+                            <p>Selecione o diretório de instalação clicando em <b>Procurar</b>, deixe habilitada a checkbox <b>"Gerar Atalhos"</b> para gerar
+                                um atalho na área de trabalho e clique em <b>Instalar</b>.</p>
+                            <img src="../res/img/guia_do_usuario/processo_instalacao/diretorio.png" width="600px" style="display: block; margin: auto;">
+                            <p></p>
+
+                            <p class="ale high"><b> </b> Verifique se o local de instalação cumpre os requisitos de espaço disponível. Para mais informações verifique as Especificações técnicas do produto para prosseguir com a instalação.</p>
+
+                            <p>O processo de instalação deve levar entre 5 e 10 minutos para ser concluído. Não feche o programa ou desligue o
+                                computador até que a instalação seja finalizada.</p>
+
+                            <p>Após o fim da instalação, clique em Executar para continuar para finalizar a instalação e prosseguir para a etapa de configuração.</p>
+
+                            <img src="../res/img/guia_do_usuario/processo_instalacao/termino_instalacao.png" width="600px" style="display: block; margin: auto;">
+                            <p></p>
+                            <p class="inf high"><b> </b> Ao finalizar a instalação, a plataforma já deve estar instalada em sua máquina. Uma interface de configuração deve aparecer automaticamente. Caso não apareça, execute o aplicativo recém-instalado:</p>
+                            <img src="../res/img/guia_do_usuario/processo_instalacao/pesquisa_server.png" width="300px" style="display: block; margin: auto;">
+                            <p></p>
+
+                            <p>Na interface de configuração, selecione um endereço de rede disponível para o servidor do Defense IA 3.3. Clique em <b>Próxima etapa</b>.</p>
+
+                            <img src="../res/img/guia_do_usuario/processo_instalacao/config_instalacao.png" width="400px" style="display: block; margin: auto;">
+                            <p></p>
+
+                            <p>NIC único: aplicável a cenários nos quais o servidor opera com uma única interface de rede.</p>
+
+                               <p> Modo NIC duplo: indicado para cenários em que o servidor utiliza duas interfaces de rede, cada uma com segmentação distinta. Nessa configuração, o servidor sempre prioriza a interface NIC 1.
+                            </p>
+                            <p>
+                                Caso o servidor possua um endereço IP público, você pode indicá-lo em <b>Modo WAN</b>, desta forma, você poderá acessar o servidor a partir da internet.
+                            </p>
+                            <p class="ale high"><b> </b> As informações de rede devem ser as mesmas de seu computador. Caso possua dúvidas de quais são essas, verifique em: <a href="https://support.microsoft.com/pt-br/windows/encontre-seu-endere%C3%A7o-ip-no-windows-f21a9bbc-c582-55cd-35e0-73431160a1b9" target="_blank">Encontre seu endereço IP no Windows - Suporte da Microsoft®.</a></p>
+                            <br>
+                            <p>Durante etapa final, ative ou desative o TLS 1.0 ou 1.1 se necessário. Clique em <b>Finalizado</b> para
+                                finalizar o processo de instalação e executar os serviços.</p>
+                            <img src="../res/img/guia_do_usuario/processo_instalacao/config_instacao2.png" width="400px" style="display: block; margin: auto;">
+                            <p></p>
+
+                           
+
+                            <p class="ale high"><b> </b> TLS 1.0 possui vulnerabilidades conhecidas, é recomendável mantê-lo desativado.</p>
+
+                            <p>A memória RAM total deve ser igual ou maior que 16GB, a memória disponível deve ser igual ou superior a 8GB, caso os requisitos não sejam atendidos os serviços não serão iniciados.</p>
+                            
+                            <p class="inf high"><b> </b>Após a instalação, as seguintes regras de firewall serão criadas no Windows, resultando no bloqueio das portas listadas: firewall_block, firewall_MGW, firewall_MQ_DEBUG, firewall_NGINX_HTTP. Essas portas são bloqueadas por questões de segurança, pois não devem ser acessadas externamente ao servidor</p>
+                        </section>
+
+                            
+                            <section id="download_client" data-titulo="Download Client">
+                                <h3><b>Download do Cliente Desktop:</b></h3>
+                                <p></p>
+                                <p><b>Baixar via IP do servidor:</b></p>
+                                <p>Para baixar o instalador do cliente desktop, acesse a página web do servidor pelo navegador utilizando o
+                                    endereço IP configurado, ou nome de domínio. Clique no botão com título "PC" para iniciar o download.</p>
+
+                                <img src="../res/img/configuracoes_basicas/download_client.png" width="600px" style="display: block; margin: auto;">
+                                <p></p>
+                                <p class="inf high"><b> </b> Caso não seja possível acessar a página web, verifique se está utilizando '<b>https://</b>' junto ao endereço de acesso.</p>
+                                
+                                <p>Após baixado, execute o instalador e siga as instruções para instalar e configurar o Cliente.</p>
+                                <img src="../res/img/guia_do_usuario/processo_instalacao/client_executavel.png" width="100px">
+    
+                                    
+                            </section>
+
+                        </section>
+                        <hr>
+                        <section id="processo_instalacao_do_client" data-titulo="Processo Cliente">
+
+                            <h2>Primeiros passos</h2>
+
+                            <p>Para realizar o primeiro acesso à plataforma, preencha as informações de conexão. 
+                                As informações de conexão podem ser vistas no gerenciador de serviços da plataforma, 
+                                o endereço IP cadastrado como endereço do sistema e a porta de conexão HTTPS, por padrão 443.</p>
+                            <img src="..//res/img/instalacao_client/inst_client.jpg" width="700px" style="display: block; margin: auto;">
+                            <p></p>
+                            <p class="inf high">Caso opte por realizar acesso a partir de um outro computador, é necessário habilitar a regra de conexão no serviço de firewall do Windows onde a plataforma foi instalada. Você pode fazer isso em:
+                                <br>
+                                <b>Windows Defender Firewall com Segurança Avançada > Regras de Entrada > firewall_block</b>
+                                <br>
+                                Clique com o botão direito, em propriedades permita a conexão e salve as configurações.</p>
+
+
+                            <h3>Ferramenta de gerenciamento</h3>
+                            <p>a ferramenta de gerenciamento permite vizualizar o status dos serviços, iniciar serviçõs, alterar portas de serviço, entre outras fuções.</p>
+                                <img src="..//res/img/instalacao_client/inst_client32.jpg" width="700px" style="display: block; margin: auto;">
+                                <table>
+                                <thead>
+                                    <tr>
+                                        <th style="width: 210px">Índice</th>
+                                        <th>Definição</th>
+                                        <th>Detalhe</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="1">1</td>
+                                        <td>Informações do servidor</td>
+                                        <td>Exibe o endereço de IP e o tipo de plataforma.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1">2</td>
+                                        <td>Status dos serviços</td>
+                                        <td>Existem 5 status de serviçõs, incluindo: iniciando, indisponível, parando, em execução e parado.
+                                            <p>● O status indisponível depende apenas do status do serviço SMC. Se o serviço SMC não estiver funcionando corretamente, o status geral ficará indisponível.</p>
+                                            <p>● Em execução significa que todos os serviços estão funcionando normalmente.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1">3</td>
+                                        <td>Informações para mapeamento de portas</td>
+                                        <td>Exibe as portas que precisam ser mapeadas para diversas funções.
+                                            <p>Selecione uma ou mais funções, e as portas que devem ser mapeadas serão exibidas á direita. Clique em <b>Exportar</b> para salvá-las no computador e facilitar a verificação.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1">4</td>
+                                        <td>Download de cliente e logs</td>
+                                        <td>● <b>Cliente:</b> Exibe como baixar o cliente para o PC e o aplicativo.
+                                            <p>● <b>Logs:</b> Permite baixar os logs de operação da ferramenta de gerenciamento.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="1">5</td>
+                                        <td>Configurações e visualização de informações da plataforma</td>
+                                        <td>● <b>Configuração do Windows:</b> Clique em <b>Windons Config</b>, e em seguida, clique em <b>Habilitar condigurações de Rede do sistema</b> ou <b>Habilitar Configurações de Hora do sistema</b>, para configurar, respectivamente, a rede ou o horário do sistema operacional Windonws.                                                
+                                        <p>● <b>Rede:</b> Configure o modo da placa de rede, endereço de IP e o modo WAN:</p>
+                                        <p>Se o servidor possuir duas placas de rde, você pode selecionar o modo <b>Dual NIC</b>, configurar dois endereços IP, e assim a plataforma poderá se conectar a duas redes e acessar dispositivos em ambas.</p>
+                                        <p>Se a plataforma estiver em uma rede local e os dispositivos estiverem na Internet, ou se for necessário acessar a plataforma que está em uma rede local a partir da internet, é possível habilitar o <b>Modo WAN</b> e mapear o endereço de IP da plataforma para IP WAN ou nome de domínio.</p>
+                                        <p>● <b>Segurança:</b> Selecione a versão do protocolo TLS ao acessar a página web da platarforma por um navegador. O <b>TLS 1.2</b> é selecionado por padrão e não pode ser desativado.</p>
+                                        <p>Existemm vulnerabilidades de segurança no protoclos TLS 1.0 e 1.1. Recomendamos dortemente desativá-los para evitar riscos de segurança.</p>
+                                        <p>Após a configuração, siga as instruções exibidas na tela para configurar a versão do protocolo TLS no navegador IE, garantindo o acesso normal à página da plataforma.</p>
+                                        <p>● <b>Idioma:</b> Selecione o idioma daferramenta de gerenciamento. Vários idiomas são suportados.</p>
+                                        <p>● <b>Auto adaptação de porta:</b> Se uma porta estiver ocupada, a plataforma a alterará automaticamente.</p>
+                                        <p>Após ativar ou desativar essa função, é necessário reniciar o servidor para que tenha efeito.</p>
+                                        <p>● <b>Redefinir senha do sistema:</b> Redefine a senha do usuário do sistema.</p>
+                                        <p><b>1.</b> Clique em <b>Exportar</b>, defina a senha de criptografia e exporte o arquivo de solicitação.</p>
+                                        <p><b>2.</b> Entre em contato com o suporte técnico para obter o arquivo de redefinição de senha com base no arquivo de solicitação.</p>
+                                        <p><b>3.</b> Clique em <b>Redefinir</b> para importar o arquivo de redefinição e, em seguida, faça login no Defense Client para inicializar a senha.</p>
+                                        <p>● <b>Manual do usuário:</b> Visualiza o manual do usuário da plataforma.</p>
+                                        <p>● <b>Sobre:</b> Exibe informações da versão do software, contrato de licença do software, entre outras.</p>
+                                    </td>
+                                    </tr>
+                                    <tr>    
+                                        <td rowspan="1">6
+                                        </td>
+                                        <td>Gerenciamento do serviços</td>
+                                        <td>● Clique em <b>Reiniciar todos</b> para reiniciar todos os serviços.
+                                            <p>Ao iniciar a plataforma , se a memória disponível do servidor não atingir 4GB, apenas os serviços básicos de vídeo poderão ser ativados.</p>
+                                            <p>Se o servidor possuir menos de 2,5 GB de memória disponível, nenhum serviço ficará disponível.</p>
+                                            <p>● Clique em <b>Parar todos</b> para interromper todos os serviços.</p>
+                                            <p>● Clique em <b>Atualizar</b> o status dos serviços.</p>                                                                                 
+                                        </td>
+                                    </tr>
+                                    <td rowspan="1">7
+                                        </td>
+                                        <td>Serviços</td>
+                                        <td>Exibe todos os serviços, seus status e número de porta.
+                                            <p>Clique para alterar o número da porta de um serviço; após a modificação, os serviços serão reiniciados automaticamente.</p>                                                                                
+                                        </td>
+                                </tbody>
+                            </table>
+                        </section>
+                            <p>Ao preencher as informações, a plataforma redireciona o usuário para criação de uma senha ao 
+                                usuário <b>system</b>, usuário super administrador padrão do sistema.</p>
+                            <p></p>
+                            <img src="..//res/img/instalacao_client/inst_client1.png" width="700px" style="display: block; margin: auto;">
+                            <p></p>
+                            
+                            
+                            <p class="ale high">A senha criada neste momento será a senha de acesso à plataforma pelo usuário system, 
+                                este usuário possui privilégios máximos. Recomenda-se a utilização de uma senha forte.</p>
+
+                            <p>Após criação da senha, respostas à perguntas de segurança devem ser preenchidas.</p>
+                            <img src="..//res/img/instalacao_client/inst_client2.png" width="700px" style="display: block; margin: auto;">
+                            <p></p> 
+                            <p class="ale high">Estas respostas são utilizadas caso haja necessidade de recuperação de senha do usuário system. 
+                                <b>Preenche-as com atenção. Caso as respostas sejam esquecidas e não tenha configurado um endereço de e-mail, não será possível 
+                                recuperar a senha</b>, fazendo-se necessária a desinstalação do sistema, assim perdendo todos os dados e configurações da plataforma.</p>
+
+                            <p>Após criação da senha e acesso à plataforma. <b>Conecte-se a um servidor de e-mail e Vincule seu e-mail ao usuário system.</b> Esta operação 
+                                cria uma segunda opção caso haja necessidade da recuperação de senha.</p>
+
+                        </section>
+                        <section id="conectar_servidorEmail" data-titulo="e-mail">
+                            <h3><b>Conecte-se a um servidor de e-mail:</b></h3>
+                            <p>1 - Vá para página de <b>configurações</b> da plataforma</p>
+                            <img src="..//res/img/instalacao_client/inst_client3.png">
+
+                            <p>2 -  Em Configuração do Sistema, vá para <b>Parâmetros</b></p>
+                            <img src="..//res/img/instalacao_client/inst_client4.png">
+
+                            <p>3 - Clique em <b>Servidor de E-mail</b></p>
+                            <img src="..//res/img/instalacao_client/inst_client5.png">
+
+                            <p>4 - Habilite a opção e preencha as informações. Há 4 opções de servidores de e-mail:<p>
+
+                                • Yahoo<p>
+                                
+                                • Gmail<p>
+                                
+                                • Hotmail/Outlook<p>
+                                
+                                • Usuário definido<p>
+                                
+                                Escolha a opção que deseja utilizar e preencha as informações para cadastrar um remetente. 
+                                Clique em “Teste de e-mail” para validar a conexão e autenticação ao servidor.</p>
+                            <img src="..//res/img/instalacao_client/inst_client6.png" >
+
+                            <p>Caso as informações estejam preenchidas corretamente, uma mensagem de sucesso deve aparecer na parte superior da tela. O endereço de e-mail 
+                                preenchido em “Destinatário do Teste” deve receber um e-mail de teste (caso não ache o e-mail, verifique o lixo eletrônico).</p>
+                            <img src="..//res/img/instalacao_client/inst_client8.png" width="600px" style="display: block; margin: auto;">
+
+                            
+                            <p class="ale high">Caso esteja com dificuldades de configurar um servidor de e-mail a partir dos modelos já criados. Verifique detalhes da configuração necessária 
+                                para cada fabricante:
+                                <br>
+                                <b>Outlook/Hotmail: </b><a href="https://support.microsoft.com/pt-br/office/configura%C3%A7%C3%B5es-pop-imap-e-smtp-para-outlook-com-d088b986-291d-42b8-9564-9c414e2aa040" target="_blank">Configurações POP, IMAP e SMTP para Outlook.com - Suporte da Microsoft.</a>
+                                <br>
+                                <b>Gmail: </b><a href="https://support.google.com/a/answer/176600?hl=pt-br" target="_blank">Enviar e-mails usando uma impressora, um scanner ou um app - Ajuda do Administrador do Google Workspace,</a>
+                                <br>
+                                <b>Yahoo: </b><a href="https://kinsta.com/pt/blog/configuracoes-do-yahoo-smtp/" target="_blank">Configurações do Yahoo SMTP: Como Conectar seu Cliente de E-mail ou um Site WordPress (kinsta.com).</a>
+                                <br>
+                            </p>
+                                <p>Ao validar a conexão com o servidor de e-mail configurado. Clique em “Salvar”.</p>
+                            <img src="..//res/img/instalacao_client/inst_client9.png">
+
+
+                            <p>5 - Em Configuração Básica, vá para <b>Usuário</b></p>
+                            <img src="..//res/img/instalacao_client/inst_client10.png">
+
+
+                            <p>6 - Clique em <b>Gerenciamento de usuários</b></p>
+                            <img src="..//res/img/instalacao_client/inst_client11.png">
+
+
+                            <p>7 - Edite o usuário <b>system</b> clicando no ícone <img src="..//res/img/configuracoes_basicas/lápis.png"></p>
+                            <img src="..//res/img/instalacao_client/inst_client12.png" width="800px">
+
+                            <p>8 - Em <b>Endereço de E-mail</b>, preencha com o e-mail que deseja utilizar caso precise recuperar a senha.</p>
+                            <img src="..//res/img/instalacao_client/inst_client13.png" width="800px">
+
+                            <p>9 - Clique em “<b>OK</b>” para salvar a configuração</p>
+                            <img src="..//res/img/instalacao_client/inst_client14.png">
+                            <p></p>
+                            <p class="ale high">Por motivos de segurança, é recomendada a criação de um usuário diferente do usuário system para 
+                                operação da plataforma no cotidiano. Veja no <a href="/pt-BR/manual_pt-BR.html#usuarios_e_permissoes_adicionar_usuarios">Guia de Operação como criar um novo usuário.</a></p>
+                            <p>Ao configurar um endereço de e-mail ao usuário system, você pode partir para as demais configurações básicas do sistema. 
+                                A seguir são descritas algumas configurações recomendadas para uma melhor e mais segura experiência de usuário.</p>
+                        </section>
+                        <section id="configurar_disco" data-titulo="Disco">
+                            <h3><b>Configure um disco de imagens e arquivos:</b></h3>
+                            <p>
+                                O disco de imagens e arquivos serve para armazenar imagens de eventos gerenciados pela plataforma. É necessário para armazenar
+                                 imagens provenientes de detecções/reconhecimentos faciais, leituras de placa, registros de acesso, imagens vinculadas a eventos, etc.<br>
+                                
+                                A configuração de um disco de imagens e arquivos não interfere em funções da plataforma, apenas permite a vinculação de eventos à imagens
+                                 capturadas.<br>
+                            </p>
+                                <p>1 - Em Configuração Básica, vá para <b>Armazenamento</b></p>
+                            <img src="..//res/img/instalacao_client/inst_client15.png">
+                            <p></p>
+                            <p>2 - Expanda a lista de discos disponíveis clicando em:</p>
+                            <img src="..//res/img/instalacao_client/inst_client16.png">
+                            <p></p>
+                            <p class="ale high">Caso clique no ícone <img src="..//res/img/instalacao_client/inst_client17.png">
+                                e não apareça uma lista, verifique se há algum disco além do disco do sistema disponível. Não é possível 
+                                configurar o próprio volume do sistema como disco de imagens.
+                                <br>
+                                Você pode criar uma partição do disco do sistema para utilizar como disco de imagens. Veja como criar uma partição do disco em: <a href="https://support.microsoft.com/pt-br/windows/criar-e-formatar-uma-parti%C3%A7%C3%A3o-de-disco-r%C3%ADgido-bbb8e185-1bda-ecd1-3465-c9728f7d7d2e" target="_blank">Criar e formatar 
+                                uma partição de disco rígido - Suporte da Microsoft</a>
+                                <br>
+                                Caso opte por isso, atente-se com a recomendação de 200 GB livres no disco do sistema.</p>
+
+
+
+                            <p>3 - Utilize algum volume disponível. Note que <b>ao definir um disco como disco de imagens e arquivos, este será formatado e todos os dados serão apagados.</b> 
+                                É recomendado utilizar um disco dedicado para esta configuração.
+
+                                Clique em <img src="..//res/img/instalacao_client/inst_client18.png">
+                                para configurar o disco como disco de imagens e arquivos</p>
+                                <img src="..//res/img/instalacao_client/inst_client19.png" width="800px" style="display: block; margin: auto;">
+
+
+                        
+                            <p>4 - Clique em “<b>OK</b>” para finalizar a configuração de um disco de imagens e arquivos.</p>
+                            <img src="..//res/img/instalacao_client/inst_client20.png" width="600px" style="display: block; margin: auto;">
+                        </section>
+                        <section id="adicionar_dispositivo" data-titulo="Dispositivo">
+                            <h3><b>Adicione dispositivos:</b></h3>
+                            <p>
+                             A seguir são apresentadas algumas funções presentes na plataforma para o gerenciamento de dispositivos. Algumas configurações como sincronização de dados e 
+                            horário entre a plataforma e o dispositivo podem ser necessárias para uma operação intuitiva. 
+                                <br>
+                                <b>• Adição de dispositivos à plataforma:</b>
+                                <br>
+                                Existem diferentes métodos de adicionar dispositivos à plataforma. Você pode adicioná-los de três maneiras em Configuração Básica, <b>Dispositivos:</b></p>
+                            <img src="..//res/img/instalacao_client/inst_client21.png">
+
+
+
+                            <p>1. Inserindo informações manualmente, sendo estas, dados de rede, dados do dispositivo, e informações de login;</p>
+                            <img src="..//res/img/instalacao_client/inst_client22.png" width="800px">
+
+
+                            <p>2. Buscando-os na rede, adicionando-os de forma automática, preenchendo apenas informações de login do dispositivo;</p>
+                            <img src="..//res/img/instalacao_client/inst_client23.png" width="800px">
+
+
+                            <p>3. Adicionando-os em lote a partir de modelo disponível</p>
+                            <img src="..//res/img/instalacao_client/inst_client24.png" width="800px">
+                        </section>
+                        <section id="sincronizacao_horario">
+                            <h3><b>Sincronização de horário entre dispositivos</b></h3>
+                                <p>
+                                Os dispositivos adicionados à plataforma podem estar configurados com horários diferentes do servidor. Isso pode ocasionar em algumas falhas de 
+                                sincronismo ao visualizar reproduções de vídeos, receber eventos, entre outras rotinas que se relacionam ao horário. Para corrigir isso, sincronize 
+                                o horário entre os dispositivos e a plataforma:
+                                <p>
+                                
+                            <p>1 - Em Configuração do Sistema, vá para Parâmetros</p>
+                            <img src="..//res/img/instalacao_client/inst_client25.png">
+
+                            <p>2. Clique em Sincronização de Hora</p>
+                            <img src="..//res/img/instalacao_client/inst_client26.png" width="800px">
+
+                            <p>3. Clique em “Sincronizar Hora Agora” para sincronizar o horário entre os dispositivos e a plataforma</p>
+                            <img src="..//res/img/instalacao_client/inst_client27.png">
+
+                            <p>4. Ative as demais opções se desejado.</p>
+                            <p></p>
+                        </section>
+
+                        <section id="backup">
+                            <h3><b>Configure uma rotina de backup de dados</b></h3>
+                            <p>
+                            <p>1 - Em Configuração do Sistema, vá para <b>Backup</b></p>
+                            <img src="..//res/img/instalacao_client/inst_client28.png">
+
+                            <p>2 - Preencha as informações para configuração da realização de backup periodicamente e clique em “<b>Salvar</b>”.</p>
+                            <img src="..//res/img/instalacao_client/inst_client29.png"width="800px">
+                            <p></p>
+                            <p class="ale high">É possível configurar o backup de forma manual, no GUIA DE OPERAÇÃO >> BACKUP E RESTAURAÇÃO</p>
+
+                            <p>3 - Ao clicar em “<b>Salvar</b>”, por motivos de segurança, deve-se preencher a <b>senha do usuário operante.</b></p>
+                            <img src="..//res/img/instalacao_client/inst_client30.png">
+
+                            <p></p>
+                            <p class="ale high">A senha de criptografia é utilizada para assegurar que os dados salvos no arquivo de backup não sejam acessados por terceiros. 
+                                Caso seja necessário restaurar os dados salvos em um arquivo de backup, deve-se utilizar a senha de criptografia. <b>Caso a senha seja esquecida, 
+                                não haverá como restaurar o arquivo de backup.</b></p>
+                        </section>
+                        <hr>
+                        <section id="processo_instalacao_ca" data-titulo="Instalação do módulo de Controle de Acesso">
+                        <h2>Instalação do Cliente WEB de Controle de Acesso</h2>
+                        <p>Após efetuar o download do instalador do cliente WEB pelo <b><a href="https://download.defenseintelbras.com.br/" target="_blank">nosso site</a></b>, inicie o processo de instalação 
+                        clicando sobre o ícone ( <img src="../res/img/guia_do_usuario/processo_instalacao/ca_ico.png" width="50px"> ) com o botão direito do mouse e selecione a opção "Executar como Administrador."</p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/executar_adm_ca.gif" width="600px">
+                        <p></p>   
+                        <p class="ale high">Certifique-se de possuir o servidor Intelbras Defense IA em operação e instalado na mesma máquina que onde será instalado o Cliente Web.</p>
+                        <p>Para prosseguir com a instalação, deverá confirmar a leitura dos termos de uso. Selecione a checkbox
+                            para aceitá-los, e então clique em <b>Avançar</b>.</p>
+                        
+                        <p></p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa2.png" width="500px">
+                        <p></p>
+
+                        <p>Selecione o diretório de instalação clicando em <b>Procurar</b> e clique em <b>Next</b>.</p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa3.png" width="500px">
+                        <p></p>
+                        
+                        <p class="ale high"> Verifique se o local de instalação cumpre os requisitos de espaço disponível.</p>
+                        
+                        <p>Na próxima etapa é necessário preencher as informações do Servidor Intelbras Defense IA Lite. Preencha as informações de <a href="#processo_instalacao_do_client"><b>Endereço IP e a Senha do usuário system</b></a> e defina se o ambiente de instalação será Corporativo ou Condominial.</p>
+                        
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa4.png" width="500px">
+                        <p></p>
+                        <p class="ale high">Certifique-se que o servidor Intelbras Defense IAestá com o status <b>Executando</b>. <img src="../res/img/guia_do_usuario/processo_instalacao/executando.png" width="50px"></p>
+
+                        <p>Para seguir para etapa de instalação é necessário realizar o teste de conexão com o Intelbras Defense IA, para isso clique em <b>Testar Conexão</b> e aguarde a mensagem de confirmação:</p>
+                        <p></p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa5.png" width="500px">
+                        <p>Após o teste de conexão com sucesso, clique em <b>OK</b>, e então em <b>Avançar</b> para continuar:</p>
+                        <p></p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa6.png" width="500px">
+                        <p></p>
+                        <p>Para iniciar a instalação clique em <b>Instalar</b>:</p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa7.png" width="500px">
+                        <p></p>
+
+                        <p class="ale high">O processo de instalação pode levar entre de 10 e 40 minutos dependendo da quantidade de informações (pessoas, dispositivos e ambientes cadastrados) no servidor Intelbras Defense IA Lite.</p>
+                        <p>Durante a instalação, será solicitada permissão para instalação de bibliotecas e dependências para suporte à cadastradoras de mesa e leitores de impressão digital.</p>
+
+                        <p>Para iniciar a instalação da biblioteca InControl, clique em <b>Avançar</b>:</p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa8.png" width="500px">
+                        <p>Aceite os termos de uso e clique em <b>Avançar</b>:</p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa9.png" width="500px">
+                        <p>Instale a biblioteca clicando em <b>Instalar</b></p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa10.png" width="500px">
+                        <p>Para instalar a segunda dependência, clique em <b>Install</b> na interface que abrirá.</p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa11.png" width="500px">
+                        <p>Ao finalizar, clique em <b>Finish</b>.</p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa12.png" width="500px">
+                        <p>Clique em <b>Concluir</b>.</p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa13.png" width="500px">
+                        <p>Aguarde a finalização da instalação e então, clique em "reiniciar o computador agora" e <b>Concluir</b>.</p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/instalacao_etapa14.png" width="500px">
+                        <p></p>
+                        <p class="ale high">Ao finalizar o processo, sua máquina será reiniciada. Se desejar reiniciar a máquina em outra hora, clique em "reiniciarei o computador depois".</p>
+                        
+                        <p>Após o fim da instalação, será criado um ícone na Área de trabalho, permitindo o o acesso ao Cliente WEB de Controle de Acesso</p>
+                        <img src="../res/img/guia_do_usuario/processo_instalacao/icone_ca.png" width="100px">
+                        
+                        </section>
+                        <hr>
+                        <section id="processo_instalacao_alarmes_incendio" data-titulo="Instalação do módulo de Alarmes/Incêndio">
+                            <h2>Instalação do Cliente WEB de Centrais de Alarmes e Incêndio</h2>
+                            <p>Após efetuar o download do instalador do cliente WEB pelo <b><a href="https://download.defenseintelbras.com.br/" target="_blank">nosso site</a></b>, inicie o processo de instalação 
+                                clicando sobre o ícone ( <img src="../res/img/guia_do_usuario/processo_instalacao/mc_ico.png" width="50px"> ) com o botão direito do mouse e selecione a opção "Executar como Administrador."</p>
+                                <img src="../res/img/guia_do_usuario/processo_instalacao/executar_adm_mc.gif" width="600px">
+                                <p></p>   
+                                <p class="ale high">Certifique-se de possuir o servidor Intelbras Defense IA em operação e instalado na mesma máquina que onde será instalado o Cliente Web.</p>
+                                <p>Para prosseguir com a instalação, deverá confirmar a leitura dos termos de uso. Selecione a checkbox
+                                    para aceitá-los, e então clique em <b>Avançar</b>.</p>
+                                    <p></p>   
+                                <img src="../res/img/guia_do_usuario/processo_instalacao/instalacaoMC_etapa1.png" width="500px">
+                                <p>Selecione o diretório de instalação clicando em <b>Procurar</b> e clique em <b>Next</b>.</p>
+                                <img src="../res/img/guia_do_usuario/processo_instalacao/instalacaoMC_etapa2.png" width="500px">
+                                <p></p>
+                                
+                                <p class="ale high"> Verifique se o local de instalação cumpre os requisitos de espaço disponível.</p>
+                                
+                                <p>Na próxima etapa é necessário preencher as informações do Servidor Intelbras Defense IA Lite. Preencha a <a href="#processo_instalacao_do_client"><b> Senha do usuário system</b></a> e clique em <b>Testar Conexão</b>.</p>
+                                
+                                <img src="../res/img/guia_do_usuario/processo_instalacao/instalacaoMC_etapa3.png" width="500px">
+                                <p></p>
+                                <p class="ale high">Certifique-se que o servidor Intelbras Defense IA está com o status <b>Executando</b>. <img src="../res/img/guia_do_usuario/processo_instalacao/executando.png" width="50px"></p>
+
+                                <p>Para seguir para etapa de instalação, aguarde a mensagem de confirmação:</p>
+                                <p></p>
+                                <img src="../res/img/guia_do_usuario/processo_instalacao/instalacaoMC_etapa4.png" width="500px">
+                                <p>Após o teste de conexão com sucesso, clique em <b>OK</b>, e então em <b>Avançar</b> para continuar:</p>
+                                <p></p>
+                                <img src="../res/img/guia_do_usuario/processo_instalacao/instalacaoMC_etapa5.png" width="500px">
+                                <p></p>
+                                <p>Para iniciar a instalação clique em <b>Instalar</b>:</p>
+                                <img src="../res/img/guia_do_usuario/processo_instalacao/instalacaoMC_etapa6.png" width="500px">
+                                <p></p>
+                                <p>Aguarde a finalização da instalação e então clique em <b>Concluir</b>.</p>
+                                <img src="../res/img/web_alarmes/WebA10.png">
+                                <p>Após o fim da instalação, será criado um ícone na Área de trabalho, permitindo o o acesso ao Cliente WEB de Middleware de Centrais</p>
+                                <img src="../res/img/guia_do_usuario/processo_instalacao/icone_mc.png" width="100px">
+                              </section>
+                        <hr>
+                        <section id="instalacao_app" data-titulo="Instalação Aplicativo mobile">
+                            <h2>Instalação do APP móvel Intelbras Defense IA</h1>
+                                <p>Para instalar o aplicativo móvel para conexão ao Defense IA, siga as instruções a seguir.</p>
+                            
+                            <section id="android">
+                                <h3><b>Instalação no Android</b></h3>
+                                <ol>
+                                    <li>Acesse a Google Play Store em seu dispositivo Android.</li>
+                                    <li>No campo de busca, digite <strong>Defense IA V3</strong> e pressione enter.</li>
+                                    <li>Nos resultados de pesquisa, localize o aplicativo <strong>Defense IA V3</strong> e clique nele.</li>
+                                    <li>Clique no botão <strong>Instalar</strong> para iniciar o download e a instalação do app.</li>
+                                    <li>Aguarde a conclusão da instalação.</li>
+                                    <li>Após a instalação, clique no botão <strong>Abrir</strong> para iniciar o aplicativo.</li>
+                                    <li>Realize o login ou cadastre-se no aplicativo com suas credenciais do Software Intelbras Defense IA.</li>
+                            <img src="..//res/img/guia_do_usuario/android.png" width="300px">
+                                </ol>
+                            </section>
+                        
+                            <section id="ios">
+                                <h3><b>Instalação no iOS</b></h3>
+                                <ol>
+                                    <li>Acesse a App Store em seu dispositivo iOS.</li>
+                                    <li>No campo de busca, digite <strong>Defense IA V3</strong> e pressione enter.</li>
+                                    <li>Nos resultados de pesquisa, localize o aplicativo <strong>Defense IA V3</strong> e toque nele.</li>
+                                    <li>Toque no botão <strong>Obter</strong> para iniciar o download e a instalação do app.</li>
+                                    <li>Se solicitado, autentique-se com seu ID Apple, Touch ID ou Face ID.</li>
+                                    <li>Aguarde a conclusão da instalação.</li>
+                                    <li>Após a instalação, toque no botão <strong>Abrir</strong> para iniciar o aplicativo.</li>
+                                    <li>Realize o login ou cadastre-se no aplicativo com suas credenciais do Software Intelbras Defense IA.</li>
+                            <img src="..//res/img/guia_do_usuario/ios.jpg" width="300px">
+                                </ol>
+                            </section>
+                    </section>
+                    <hr>
+
+                    <section id="IMPORTACAO" data-titulo="Migração">
+                        <h1>IMPORTAÇÃO DE DADOS E DISPOSITIVOS</h1>
+    
+                        <p>Nesta sessão é possivel ver dois métodos de importação, a importação de dados das controladoras de acesso e importação de dispositivos.</p>
+
+                    <section id="importacao_de_dados_ca" data-titulo="Importação de dados de controladora de acesso">
+                        <h2>Importação de dados da Controladora de Acesso</h2>
+                        <p>Para realizar a importação de dados de uma controladora de acesso é necessário que o usuário vá ao menu <b>Pessoas e Veículos</b> no Client e siga os próximos passos.</p>
+                        <img src="../res/img/importacao/passo1.png" width="800px">
+                        <p>Na aba de Lista de Pessoas, selecione a opção de importar.</p>
+                        <img src="../res/img/importacao/passo2.png" width="800px">
+                        <p>Em seguida selecione a opção de <b>Importar de um dispositivo.</b></p>
+                        <img src="../res/img/importacao/passo3.png" width="800px">
+                        <p>Selecione o dispositivo de que deseja importar os dados.</p>
+                        <img src="../res/img/importacao/passo4.png" width="800px">
+                        <p>Após os dados do dispositivo terem sido carregados, clique em <img src="../res/img/importacao/olho.png" width="30px"></p>
+                        <P>E selecione a opção <b>Importar tudo</b> e escolha o grupo de pessoas em que dejesa adicionar os dados.</P>
+                        <img src="../res/img/importacao/passo5.png" width="600px">
+                        <br><br>
+                        <img src="../res/img/importacao/passo6.png" width="600px">
+                        <p>Se tudo for feito corretamente, os dados devem ter sido importados com êxito.</p>
+                        <img src="../res/img/importacao/passo7.png" width="500px">
+                    </section>
+                    <section id="importacao_dispo" data-titulo="Importação de dispositivos">
+                        <h2>Importação de dados da Controladora de Acesso</h2>
+                        <img src="../res/img/importacao/passo8.png" width="800px">
+                        <p>Na aba de adição de dispositivos, selecione a opção <b>Importar.</b></p>
+                        <img src="../res/img/importacao/passo2.png" width="800px">
+                        <p>em seguida baixe o modelo de importção de dispositivos, e o salve em uma posição de fácil acesso.</p>
+                        <img src="../res/img/importacao/passo9.png" width="800px">
+                        <br><br>
+                        <img src="../res/img/importacao/passo10.png" width="800px">
+                        <p>E o preemcha com os dados dos dispositivos que deseja importar ao Client:</p>
+                        <p>● Categoria do dispositivo</p>
+                        <p>● Tipo do dispositivo</p>
+                        <p>● Protocolo de acesso</p>
+                        <p>● Modo de adição</p>
+                        <p>● Nome do dispositivo</p>
+                        <p>● IP</p>
+                        <p>● Porta do dispositivo</p>
+                        <p>● Organização</p>
+                        <p>● Servidor</p>
+                        <p>● Nome de usuário</p>
+                        <p>● Senha</p>
+                        <br><br>
+                        <p>E depois salve o documento com os dados preenchidos para utiliza-lo no próximo passo.</p>
+                        <img src="../res/img/importacao/passo11.png" width="600px">
+                        <p>Depois de volta a tela de importação do Defense Client, selecione a opção <b>Importar arquivo.</b></p>
+                        <img src="../res/img/importacao/passo12.png" width="600px">
+                        <p>Selecione o documento e escolha a opção de abrir.</p>
+                        <img src="../res/img/importacao/passo13.png" width="600px">
+                        <p>Se tudo ocorreu como devia, todos os dispositivos devem ter sido importados com êxito.</p>
+                        <img src="../res/img/importacao/passo14.png" width="600px">
+
+                <section id="faleCom" class="fale-com-a-gente">
+                    <div class="div-logo-fale-com-a-gente">
+                        <img src="../res/img/intelbras_marca.svg" class="logo-itb-fale-com-a-gente">
+                    </div>
+                    <hr class="divider">
+
+                    <img src="../res/img/faleCom.jpg" class="logo-fale-com-a-gente">
+                    <div class="div-info-fale-com-a-gente">
+                        <p><strong>Suporte a clientes:</strong> (48) 2106 0006</p>
+                        <p><strong>Fórum:</strong> <a href="http://forum.intelbras.com.br" target="blank">forum.intelbras.com.br</a></p>
+                        <p><strong>Suporte via chat:</strong> <a href="http://www.intelbras.com.br/suporte-tecnico" target="blank">intelbras.com.br/suporte-tecnico</a></p>
+                        <p><strong>Suporte via e-mail</strong>: suporte@intelbras.com.br</p>
+                        <p><strong>SAC:</strong> 0800 7042767</p>
+                        <p><strong>Onde comprar? Quem instala?:</strong> 0800 7245115</p>
+                        <p>Produzido por: Intelbras S/A – Indústria de Telecomunicação Eletrônica Brasileira</p>
+                        <p>Rodovia SC 281, km 4,5 – Sertão do Maruim – São José/SC - 88122-001</p>
+                        <p><a href="http://www.intelbras.com.br" target="blank">www.intelbras.com.br</a></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

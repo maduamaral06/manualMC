@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--
+    #Publishers: Johnatan Duarte, Pedro Saraiva
+    #Last edition: 30/06/2024
+    #Version: 2.0
+-->
+
+<html>
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-LNVT2YN5CD"></script>-->
+    <!--<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LNVT2YN5CD');
+    </script>-->
+    <head>
+        <title>Manual do Produto - Intelbras Defense IA V3</title>
+        <link rel="shortcut icon" href="res/img/favicon.ico"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="res/css/manual.css">
+    </head>
+    <!-- 
+    Script para carregar o PDF do datasheet a partir de ./res/pdf-link.json
+    o arquivo JSON deve conter a URL do PDF. Este arquivo é atualizado automaticamente via pipeline de CI do projeto.
+    -->
+    <script>
+        fetch('./res/pdf-link.json')
+            .then(res => res.json())
+            .then(data => {
+                if (data?.datasheetURL) {
+                    document.getElementById('defenseIALitePDF').src = data.datasheetURL;
+                } else {
+                    document.getElementById('defenseIALitePDF').outerHTML = '<p>PDF não encontrado.</p>';
+                }
+            })
+            .catch(err => {
+                console.error('Erro ao carregar o PDF:', err);
+                document.getElementById('defenseIALitePDF').outerHTML = '<p>Erro ao carregar o PDF.</p>';
+            });
+    </script>
+
+    <body class="home">        
+        <div style="width: 1230px; margin: auto; padding-top: 20px; padding-left: 20px; padding-bottom: 20px;">
+            <img src="res/img/intelbras_marca.svg" style="width: 160px">
+        </div>
+        <div class="tcontainer">
+        
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="panel-heading-left">Manual do Usuário - Intelbras Defense IA V3</div>
+                    <div class="panel-heading-right"></div>
+                </div>
+                <div class="panel-body">
+                    <div class="menuManual">
+                        <ul>
+                            <section id="apresentacao" data-titulo="Apresentação">
+                                <p class="versao-manual">Versão deste guia: 3.0 </p>
+                                <h1>Software Intelbras Defense IA   V3</h1>
+                                <br>
+                                <p style="font-size: 18px; text-align: justify;">Parabéns, você acaba de adquirir um produto com a qualidade e segurança Intelbras.
+                                Este manual do usuário apresenta as funções e operações do centro de gerenciamento
+                                de vigilância geral do Defense IA e operações do cliente.
+                                O manual é atualizado regularmente, caso não encontre algum conteúdo específico,
+                                verifique se possui a última versão disponível.
+                                    </p>
+                                <br>
+                                <p style="font-size: 18px; text-align: justify;">Defense IA é o software Intelbras de gerenciamento centralizado de segurança; o sistema dispõe
+                                interfaces de controle para monitoramento de vídeo, controle de acesso, eventos e alarmes,
+                                administração de dispositivos, recursos de Inteligência Artificial, entre outras funcionalidades que
+                                compõem o ecossistema de segurança.
+                                Baseado em uma estrutura cliente-servidor, o Defense IA apresenta uma arquitetura de rede
+                                descentralizada, ou seja, múltiplos clientes podem se conectar ao servidor central, acessando seus
+                                serviços e recursos.
+                                </p>            
+                                <img src="./res/img/estrutura_servidor_client.jpg" width="500px" style="display: block; margin: auto;">
+                                <br>
+                                <p style="font-size: 18px; text-align: justify;">Isso torna a estrutura de informação escalável e eficiente, permitindo a distribuição da execução de
+                                tarefas entre múltiplos dispositivos enquanto apresenta a centralização da utilização de recursos
+                                para gerenciamento e processamento de serviços.
+                                O Defense IA é projetado com uma grande capacidade de expansão, portanto, uma de suas principais características é o crescimento horizontal, permitindo a implantação de sistemas com até
+                                20.000 canais de monitoramento e capacidade de armazenamento de até 4 PB. Além de todas suas
+                                funcionalidades, você também pode solicitar customizações que atendam às suas necessidades,
+                                construindo assim um ambiente só seu.
+                                </p>
+                                <br>
+            
+                            </section>
+                            <a href="pt-BR/guiadeusuario_pt-BR.html">
+                                <li class="bg2">
+                                    <div>
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px" x="0px" y="0px"
+                                             viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
+                                            <g>
+                                                <path fill="#00A94D" d="M44,1C20.3,1,1,20.3,1,44c0,23.7,19.3,43,43,43c23.8,0,43-19.3,43-43C87,20.3,67.7,1,44,1z M44,83.4
+                                                    C22.2,83.4,4.6,65.8,4.6,44C4.6,22.2,22.2,4.6,44,4.6c21.8,0,39.4,17.6,39.4,39.4C83.4,65.8,65.8,83.4,44,83.4z"/>
+                                                <path fill="#00A94D" d="M68.9,23.3H19.1c-1.9,0-3.4,1.5-3.4,3.4v34.5c0,1.9,1.5,3.4,3.4,3.4h49.9c1.9,0,3.4-1.5,3.4-3.4V26.7
+                                                    C72.4,24.8,70.8,23.3,68.9,23.3z M68.5,25c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1C67.6,25.4,68,25,68.5,25z M65,25
+                                                    c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1C64,25.4,64.4,25,65,25z M61.4,25c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1
+                                                    c-0.5,0-1-0.4-1-1C60.4,25.4,60.9,25,61.4,25z M70.5,59.4c0,1.8-1.5,3.3-3.4,3.3H21c-1.9,0-3.4-1.5-3.4-3.3V31.8
+                                                    c0-1.8,1.5-3.3,3.4-3.3H67c1.9,0,3.4,1.5,3.4,3.3V59.4z"/>
+                                                <g>
+                                                    <g>
+                                                        <path fill="#00A94D" d="M65.8,59.8H38.7c-1.3,0-2.4-1.1-2.4-2.4v-3.9c0-1.3,1.1-2.4,2.4-2.4h27.1c1.3,0,2.4,1.1,2.4,2.4v3.9
+                                                            C68.2,58.7,67.1,59.8,65.8,59.8z M38.7,52.3c-0.6,0-1.2,0.5-1.2,1.2v3.9c0,0.6,0.5,1.2,1.2,1.2h27.1c0.6,0,1.2-0.5,1.2-1.2v-3.9
+                                                            c0-0.6-0.5-1.2-1.2-1.2H38.7z"/>
+                                                    </g>
+                                                    <g>
+                                                        <path fill="#00A94D" d="M65.8,48.6H38.7c-1.3,0-2.4-1.1-2.4-2.4V34.8c0-1.3,1.1-2.4,2.4-2.4h27.1c1.3,0,2.4,1.1,2.4,2.4v11.4
+                                                            C68.2,47.5,67.1,48.6,65.8,48.6z M38.7,33.6c-0.6,0-1.2,0.5-1.2,1.2v11.4c0,0.6,0.5,1.2,1.2,1.2h27.1c0.6,0,1.2-0.5,1.2-1.2V34.8
+                                                            c0-0.6-0.5-1.2-1.2-1.2H38.7z"/>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="19.9" y="33" fill="#00A94D" width="12.9" height="1.8"/>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="19.9" y="39.1" fill="#00A94D" width="12.9" height="1.8"/>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="19.9" y="51.3" fill="#00A94D" width="12.9" height="1.8"/>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="19.9" y="45.2" fill="#00A94D" width="12.9" height="1.8"/>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="19.9" y="57.3" fill="#00A94D" width="12.9" height="1.8"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="titleOptionMenuManual">Guia de Implantação</p>
+                                        <p class="descriptionOptionMenuManual">Informações básicas sobre instalação e recomendações de configuração. Indicado para quem deseja configurar a plataforma pela primeira vez.</p>
+                                    </div>
+                                </li>
+                            </a>
+                            <a href="pt-BR/manual_pt-BR.html">
+                                <li class="bg3">
+                                    <div>
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px" x="0px" y="0px"
+                                             viewBox="0 0 88 88" style="enable-background:new 0 0 88 88;" xml:space="preserve">
+                                            <g>
+                                                <path fill="#00A94D" d="M44,1C20.3,1,1,20.3,1,44c0,23.7,19.3,43,43,43c23.8,0,43-19.3,43-43C87,20.3,67.7,1,44,1z M44,83.4
+                                                    C22.2,83.4,4.6,65.8,4.6,44C4.6,22.2,22.2,4.6,44,4.6c21.8,0,39.4,17.6,39.4,39.4C83.4,65.8,65.8,83.4,44,83.4z"/>
+                                                <path fill="#00A94D" d="M68.9,23.3H19.1c-1.9,0-3.4,1.5-3.4,3.4v34.5c0,1.9,1.5,3.4,3.4,3.4h49.9c1.9,0,3.4-1.5,3.4-3.4V26.7
+                                                    C72.4,24.8,70.8,23.3,68.9,23.3z M68.5,25c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1C67.6,25.4,68,25,68.5,25z M65,25
+                                                    c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1C64,25.4,64.4,25,65,25z M61.4,25c0.5,0,1,0.4,1,1c0,0.5-0.4,1-1,1
+                                                    c-0.5,0-1-0.4-1-1C60.4,25.4,60.9,25,61.4,25z M70.5,59.4c0,1.8-1.5,3.3-3.4,3.3H21c-1.9,0-3.4-1.5-3.4-3.3V31.8
+                                                    c0-1.8,1.5-3.3,3.4-3.3H67c1.9,0,3.4,1.5,3.4,3.3V59.4z"/>
+                                                <g>
+                                                    <g>
+                                                        <path fill="#00A94D" d="M65.8,59.8H38.7c-1.3,0-2.4-1.1-2.4-2.4v-3.9c0-1.3,1.1-2.4,2.4-2.4h27.1c1.3,0,2.4,1.1,2.4,2.4v3.9
+                                                            C68.2,58.7,67.1,59.8,65.8,59.8z M38.7,52.3c-0.6,0-1.2,0.5-1.2,1.2v3.9c0,0.6,0.5,1.2,1.2,1.2h27.1c0.6,0,1.2-0.5,1.2-1.2v-3.9
+                                                            c0-0.6-0.5-1.2-1.2-1.2H38.7z"/>
+                                                    </g>
+                                                    <g>
+                                                        <path fill="#00A94D" d="M65.8,48.6H38.7c-1.3,0-2.4-1.1-2.4-2.4V34.8c0-1.3,1.1-2.4,2.4-2.4h27.1c1.3,0,2.4,1.1,2.4,2.4v11.4
+                                                            C68.2,47.5,67.1,48.6,65.8,48.6z M38.7,33.6c-0.6,0-1.2,0.5-1.2,1.2v11.4c0,0.6,0.5,1.2,1.2,1.2h27.1c0.6,0,1.2-0.5,1.2-1.2V34.8
+                                                            c0-0.6-0.5-1.2-1.2-1.2H38.7z"/>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="19.9" y="33" fill="#00A94D" width="12.9" height="1.8"/>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="19.9" y="39.1" fill="#00A94D" width="12.9" height="1.8"/>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="19.9" y="51.3" fill="#00A94D" width="12.9" height="1.8"/>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="19.9" y="45.2" fill="#00A94D" width="12.9" height="1.8"/>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="19.9" y="57.3" fill="#00A94D" width="12.9" height="1.8"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>                                  
+                                    <div>
+                                        <p class="titleOptionMenuManual">Guia de operação</p>
+                                        <p class="descriptionOptionMenuManual">Informações sobre as configurações disponíveis e Interface Web. Indicado para quem deseja realizar configurações avançadas.</p>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                        <p>Dica: se desejar abrir cada manual em uma aba separada, segure a tecla Ctrl ao clicar no link.</p>
+                        <br>
+
+                        <section id="sobre_manual" class="sobre_manual" data-titulo="Sobre o Manual">
+                            <h1>Sobre o Manual</h1>
+        
+                            <p>» O manual é apenas para referência. Se houver inconsistência entre o manual e o produto real, o produto real prevalecerá. Não nos responsabilizamos por quaisquer perdas causadas poroperações que não estejam de acordo com o manual.</p>
+                            <p>» O manual será atualizado de acordo com as leis e regulamentações mais recentes das regiões relacionadas. Para obter informações detalhadas, consulte o manual no nosso site: www.intelbras.com.br. Se houver inconsistência entre manuais em papel e a versão eletrônica, a versão eletrônica prevalecerá.</p>
+                            <p>» Todo o software está sujeito a alterações sem aviso prévio por escrito. As atualizações do produto podem causar algumas diferenças entre o produto real e o manual. Contate o serviço de apoio ao cliente para obter informações referentes as versões mais recentes e documentações complementares.</p>
+                            <p>» Ainda pode haver desvio nos dados técnicos, descrição de funções e operações ou erros na impressão. Se houver qualquer dúvida ou disputa, consulte nossa explicação final.</p>
+                            <p>» Atualize o software do leitor de PDF ou tente outro software do leitor de PDF se o manual (em formato PDF) não puder ser aberto.</p>
+                            <p>» Todas marcas comerciais, marcas registradas e os nomes das empresas no manual são de propriedade dos respectivos proprietários.</p>
+                            <p>» Visite nosso site, entre em contato com o fornecedor ou atendimento ao cliente se houver algum problema ocorrido ao usar o software.</p>
+                            <p>» Se houver alguma incerteza ou controvérsia, consulte nossa explicação final.</p>
+        
+                        </section>
+                        <br>
+                       _<!-- <section id="requisitios_e_specs" style="border-bottom: none" data-titulo="Especificações e Requisitos">
+                            <h1>Especificações técnicas do produto</h1>
+                            <iframe src="https://backend.intelbras.com/sites/default/files/2025-11/Datasheet_Defense%20IA%203.2.pdf" width="100%" height="600px"></iframe>
+                            
+                        </section>
+                        <br>
+                        <section id="politica_de_privacidade" style="border-bottom: none" data-titulo="Política de Privacidade">
+                            <h1>Política de privacidade</h1>
+                        <iframe src=" https://www.intelbras.com/pt-br/politica-de-privacidade/termos" width="100%" height="600px"></iframe>
+                        </section>
+                        <br>
+                        <section id="termos_de_uso" style="border-bottom: none" data-titulo="Termos de Uso">
+                            <h1>Termos de uso de software</h1>
+                        <iframe src="https://www.intelbras.com/pt-br/politica-de-privacidade/termos" width="100%" height="600px"></iframe>
+                        </section>
+                        
+                    </div>                   
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-heading">
+                    <div class="panel-heading-left">Contatos</div>
+                    <div class="panel-heading-right"></div>
+                </div>-->
+                <div class="panel-body">
+                    <p>Caso não tenha encontrado a informação desejada em um dos manuais, acesse nosso site <a href="http://www.intelbras.com.br/pt-br/suporte" target="_blank">www.intelbras.com.br</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

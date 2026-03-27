@@ -1,0 +1,19 @@
+{
+  "name": "manual-defense-lite",
+  "version": "1.0.0",
+  "description": "Projeto da versão online do Manual do Software de Defense Lite",
+  "repository": {
+    "type": "git",
+    "url": "https://git.intelbras.com.br/isec/linha-future/manual-defense-lite/manual-defense-lite.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "scraper-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "puppeteer": "^24.15.0"
+  }
+}
